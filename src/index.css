@@ -1,8 +1,14 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+@import "tailwindcss";
 
 :root {
   --jakarta-sans: 'Plus Jakarta Sans', sans-serif;
   --wedding-font: 'Parisienne', cursive;
+}
+@theme {
+  /* bagian font diawali --font-* */
+  --font-jakarta: var(--jakarta-sans); /* Pakainnya tinggal font-* */
+  --font-wedding: var( --wedding-font);
 }

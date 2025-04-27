@@ -32,10 +32,8 @@ function Countdown() {
   };
 
   useEffect(() => {
-    // Update immediately on mount
     setTimeLeft(calculateTimeLeft());
     
-    // Then update every second
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -43,7 +41,6 @@ function Countdown() {
     return () => clearInterval(timer);
   }, []);
 
-  // Format numbers to always show two digits
   const formatNumber = (num) => num.toString().padStart(2, '0');
 
   return (
