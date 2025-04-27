@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="text-center py-8 px-4 bg-white">
-<h1 className="text-4xl md:text-6xl font-[var(--wedding-font)] font-bold mb-2">
+<h1 className="text-4xl md:text-6xl font-wedding font-bold mb-2">
   Wedding - Harris Maulana & Takanashi Rikka
 </h1>
 <p className="text-lg md:text-xl text-gray-600 font-[var(--jakarta-sans)]">
